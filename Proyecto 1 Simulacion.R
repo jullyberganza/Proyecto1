@@ -102,12 +102,16 @@ head(sim1)
 
 mean(sim1$tMedCola)
 
+#R. Para un servidor el tiempo promedio es de 68.92
+
 #Para 2 servidores
 
 sim2 <- simul(10,2)
 head(sim2)
 
 mean(sim2$tMedCola)
+
+#R. Para dos servidores el tiempo promedio es de 43.68
 
 #Para 3 servidores
 
@@ -116,12 +120,16 @@ head(sim3)
 
 mean(sim3$tMedCola)
 
+#R. Para tres servidores el tiempo promedio es de 21.11
+
 #Para 4 servidores
 
 sim4 <- simul(10,4)
 head(sim4)
 
 mean(sim4$tMedCola)
+
+#R. Para cuatro servidores el tiempo promedio es de 9.48
 
 #Para 5 servidores
 
@@ -130,11 +138,15 @@ head(sim5)
 
 mean(sim5$tMedCola)
 
+#R. Para cinco servidores el tiempo promedio es de 5.09
+
 #Para 6 servidores
 sim6 <- simul(10,6)
 head(sim6)
 
 mean(sim6$tMedCola)
+
+#R. Para seis servidores el tiempo promedio es de 1.69
 
 #Para 7 servidores
 
@@ -142,6 +154,8 @@ sim7 <- simul(10,7)
 head(sim7)
 
 mean(sim7$tMedCola)
+
+#R. Para siete servidores el tiempo promedio es de 0.44
 
 #2. Si no se quiere que un cliente esté más de 15 minutos en cola, cuántos agentes tiene que tener el banco? (Cola Infinita)
 #Para 1 servidor
@@ -189,17 +203,25 @@ mean(sim7$tEsperaCola)
 
 mean(sim1$persNoAt)
 
+#R. Cuando atiende un servidor, no son atendidas 58.9 personas en promedio.
+
 #Para 2 servidores
 
 mean(sim2$persNoAt)
+
+#R. Cuando atienden dos servidores, no son atendidas 33.7 personas en promedio.
 
 #Para 3 servidore
 
 mean(sim3$persNoAt)
 
+#R. Cuando atienden tres servidores, no son atendidas 11.1 personas en promedio.
+
 #Para 4 servidores 
 
 mean(sim4$persNoAt)
+
+#R. Cuando atienden cuatro servidores, no son atendidas 0.53 personas en promedio.
 
 #Para 5 servidores
 
@@ -213,7 +235,9 @@ mean(sim6$persNoAt)
 
 mean(sim7$persNoAt)
 
-#En promedio un cliente solo está dispuesto a esperar t minutos en la cola y si la cola es mayor de n personas los clientes deciden no hacer cola e irse del banco. Simule con estas restricciones el banco y determine cuántos clientes abandonan la cola y cuantos deciden no entrar al banco. Suponiendo cola infita.
+#R. Cuando atienden a partir de 5 servidores, todas las personas son atendidas. No hay personas en espera.
+
+#PUNTOS EXTRAS: En promedio un cliente solo está dispuesto a esperar t minutos en la cola y si la cola es mayor de n personas los clientes deciden no hacer cola e irse del banco. Simule con estas restricciones el banco y determine cuántos clientes abandonan la cola y cuantos deciden no entrar al banco. Suponiendo cola infita.
 
 simEsc2 <- function(nServers){
   tacum <<- 0
