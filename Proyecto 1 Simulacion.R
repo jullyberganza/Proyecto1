@@ -193,7 +193,7 @@ mean(sim6$tEsperaCola)
 
 mean(sim7$tEsperaCola)
 
-#Para que un cliente no espere más de 15 minutos en una cola, debe tener 6 agentes atendiendo. 
+#Al realizar esta función para los 7 servidores, se determina que se necesitan desde 5 servidores para que los clientes nos esperen más de dos minutos. 
 
 
 #3. Com una restricción extra el banco no puede tener en cola más de k personas. Cuántas personas no son aceptadas en promedio por día al banco.
